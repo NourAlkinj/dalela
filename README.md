@@ -9,11 +9,13 @@
 
 <div align="center">
 
-![Register](images/1img.png)  
-![Login](images/2img.png)
-![Tour Guide Profile](images/5img.png)
-![Tour Guide List & Tourism Agency List](images/3img.png)  
-![Requests List](images/6img.png)
+| Register                     | Login                     | Tour Guide Profile                     |
+| ---------------------------- | ------------------------- | -------------------------------------- |
+| ![Register](images/1img.png) | ![Login](images/2img.png) | ![Tour Guide Profile](images/5img.png) |
+
+| Tour Guide & Agency List           | Requests List                |
+| ---------------------------------- | ---------------------------- |
+| ![Guide & Agency](images/3img.png) | ![Requests](images/6img.png) |
 
 </div>
 
@@ -209,26 +211,13 @@ Rate Response
 "rating": 5,
 "comment": "Excellent guide!"
 }
+```
 
 ### Sample Credentials
 
-## Admin
-
-Email: admin@example.com
-Password: 12345678
-
-## Tour Guide
-
-Email: guide@example.com
-Password: 12345678
-
-## Agency
-
-Email: agency@example.com
-Password: 12345678
-
-## User
-
-Email: user@example.com
-Password: 12345678
-```
+| Role       | Email              | Password |
+| ---------- | ------------------ | -------- |
+| Admin      | admin@example.com  | 12345678 |
+| Tour Guide | guide@example.com  | 12345678 |
+| Agency     | agency@example.com | 12345678 |
+| User       | user@example.com   | 12345678 |
