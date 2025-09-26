@@ -84,7 +84,6 @@ Dalela is a **full-stack Laravel application** designed to:
 ## 1. Clone the Repository
 
 git clone https://github.com/NourAlkinj/dalela.git
-cd dalela
 
 ## 2. Install Dependencies
 
