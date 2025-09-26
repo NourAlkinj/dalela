@@ -115,15 +115,17 @@ npm run dev # Compile frontend assets if applicable
 
 ### Database Structure
 
-| Table            | Columns                                            |
-| ---------------- | -------------------------------------------------- |
-| users            | id, name, email, password, user_type_id            |
-| users_types      | id, name (e.g., User, TourGuide, Agency, Admin)    |
-| tour_guides      | id, user_id, bio, phone, languages, rating         |
-| tourism_agencies | id, user_id, agency_name, address, phone, rating   |
-| requests         | id, user_id, guide_id / agency_id, status, details |
-| rates            | id, user_id, guide_id / agency_id, rating, comment |
-| reports          | id, user_id, target_id, type, description          |
+| Table            | Columns                                                                                                                                                 |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| users            | id, name, email, password, user_type_id                                                                                                                 |
+| users_types      | id, type_title                                                                                                                                          |
+| tour_guides      | id, name, email, password, password_confirmation, city, phone_number, gender_guide, age_guide, price_guide, type_id, language_guide                     |
+| tourism_agencies | id, name, email, password, password_confirmation, city, phone_number, location_agency, commercial_record_agency, type_id, price_agency, language_agency |
+| requests         | id, user_id, guide_id, agency_id, status, request_date                                                                                                  |
+| rates            | id, user_id, request_id, description, value                                                                                                             |
+| reports          | id, user_id, agency_id, guide_id, description                                                                                                           |
+| admin            | id, name, email, password, password_confirmation                                                                                                        |
+| payment_cards    | id, user_id, card_number                                                                                                                                |
 
 ### Interfaces & Routes
 
@@ -196,19 +198,23 @@ User Request Response
 
 ```json
 {
-  "id": 1,
-  "user_id": 5,
-  "guide_id": 2,
-  "status": "pending",
-  "details": "Request for city tour"
+    "id": 1,
+    "user_id": 5,
+    "guide_id": 2,
+    "status": "pending",
+    "details": "Request for city tour"
 }
+```
+
 Rate Response
+
+```json
 {
-"id": 1,
-"user_id": 5,
-"guide_id": 2,
-"rating": 5,
-"comment": "Excellent guide!"
+    "id": 1,
+    "user_id": 5,
+    "guide_id": 2,
+    "rating": 5,
+    "comment": "Excellent guide!"
 }
 ```
 
