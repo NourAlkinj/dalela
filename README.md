@@ -127,15 +127,6 @@ npm run dev # Compile frontend assets if applicable
 | admin            | id, name, email, password, password_confirmation                                                                                                        |
 | payment_cards    | id, user_id, card_number                                                                                                                                |
 
-### Interfaces & Routes
-
-| Page                 | Route            | Description                                     |
-| -------------------- | ---------------- | ----------------------------------------------- |
-| Admin Dashboard      | `/admin`         | Manage all users, guides, agencies, and reports |
-| Tour Guide Panel     | `/tourGuide`     | Manage own profile and requests                 |
-| Tourism Agency Panel | `/tourismAgency` | Manage own profile and requests                 |
-| User Panel           | `/user`          | Browse guides/agencies, manage requests         |
-
 ### API Documentation
 
 ## 1. Authentication
